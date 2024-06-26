@@ -1,4 +1,4 @@
-homeassistant==2024.5.1
+homeassistant==2024.6.4
 mypy-dev==1.11.0a9
 pydantic==2.7.4
 pre-commit==3.7.1
