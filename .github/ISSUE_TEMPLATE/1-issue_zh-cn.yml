@@ -1,0 +1,38 @@
+---
+name: 错误报告
+description: 集成或实体无法正常工作
+labels: ["bug"]
+body:
+  - type: input
+    attributes:
+      label: HA版本
+      placeholder: 2024.5.3
+  - type: input
+    validations:
+      required: true
+    attributes:
+      label: 集成版本
+      placeholder: 0.3.23
+  - type: input
+    validations:
+      required: true
+    attributes:
+      label: 设备类型及型号
+      placeholder: Air Conditioner 22012225
+      description: 可以在 配置 -> 设备与服务 -> Midea LAN -> 设备 -> 设备信息 找到
+  - type: input
+    validations:
+      required: true
+    attributes:
+      label: 使用的App
+      placeholder: 美的美居
+      description: 使用的哪个App控制设备
+  - type: textarea
+    validations:
+      required: true
+    attributes:
+      label: 问题详细描述
+  - type: textarea
+    attributes:
+      label: The logs
+      description: 打开Midea LAN的调试日志，并将发生错误时的日志发送或上传到这里

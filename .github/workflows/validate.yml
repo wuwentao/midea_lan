@@ -1,0 +1,24 @@
+---
+name: HACS Validation
+on:
+  pull_request:
+#  schedule:
+#    - cron: "0 0 * * *"
+
+permissions: {}
+
+jobs:
+  validate:
+    name: HASS and Hassfest Validation
+    runs-on: "ubuntu-latest"
+    steps:
+      - uses: "actions/checkout@v4"
+
+      - name: HACS Action
+        uses: wuwentao/hacs_action@main
+        with:
+          category: "integration"
+          ignore: "brands"
+
+      - name: Hassfest validation
+        uses: "home-assistant/actions/hassfest@master"

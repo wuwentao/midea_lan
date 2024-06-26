@@ -1,0 +1,40 @@
+---
+name: Bug report
+description: Integration or entity is not working right
+labels: ["bug"]
+body:
+  - type: input
+    attributes:
+      label: HA core version
+      placeholder: 2023.4.2
+  - type: input
+    validations:
+      required: true
+    attributes:
+      label: Integration version
+      placeholder: 0.3.18
+  - type: input
+    validations:
+      required: true
+    attributes:
+      label: Device type and model
+      placeholder: Air Conditioner 22012225
+      description: Can be found in Settings -> Devices & Services -> \
+        Midea LAN -> Devices -> Device Info
+  - type: input
+    validations:
+      required: true
+    attributes:
+      label: Used App
+      placeholder: MSmartHome
+      description: Which app is used to control the device
+  - type: textarea
+    validations:
+      required: true
+    attributes:
+      label: The description of problem
+  - type: textarea
+    attributes:
+      label: The logs
+      description: Should enable the debug log of Midea LAN, and post or \
+        upload the log when the error occurs to here
