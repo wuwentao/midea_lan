@@ -2,4 +2,4 @@ homeassistant==2024.3.3
 mypy-dev==1.11.0a9
 pydantic==2.7.4
 pre-commit==3.7.1
-ruff==0.4.10
+ruff==0.5.0
